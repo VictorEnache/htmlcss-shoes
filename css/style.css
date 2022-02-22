@@ -3,3 +3,75 @@
     margin: 0;
     padding: 0;
 }
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 1rem;
+}
+
+nav>span{
+    display: inline-block;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    margin: 1rem;
+    
+}
+
+nav a{
+    line-height: 2rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.product{
+    height: 100vh;
+    position: relative;
+}
+
+.img_text{
+    width: 600px;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product.red{
+    background-color: red;
+}
+
+.product.green{
+    background-color: green;
+}
+
+.product.yellow{
+    background-color: yellow;
+}
+
+.product>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.product_text{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+    word-spacing: 1rem;
+}
+
+.yellow .product_text{
+    color: green;
+}
